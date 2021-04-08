@@ -10,7 +10,7 @@
   
   <link rel="shortcut icon" href="img/favicon.ico">
   
-  <title>Franzininho WiFi - Circuitython</title>
+  <title>Franzininho WiFi - CircuitPython</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="css/theme.css" />
@@ -40,7 +40,7 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-        <a href="." class="icon icon-home"> Franzininho WiFi - Circuitython</a>
+        <a href="." class="icon icon-home"> Franzininho WiFi - CircuitPython</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
@@ -77,7 +77,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href=".">Franzininho WiFi - Circuitython</a>
+        <a href=".">Franzininho WiFi - CircuitPython</a>
       </nav>
 
       
@@ -109,61 +109,35 @@
 <ol>
 <li>Conecte a Franzininho</li>
 <li>Abra o terminal</li>
+<li>Instale um terminal, por exemplo, para instalar o picocom, digite os comandos abaixo:</li>
+</ol>
+<pre><code>sudo apt-get update
+sudo apt-get install picocom
+</code></pre>
+<ol>
+<li>Para acessar o terminal serial, digite o seguinte comando: picomcom /dev/ttyACMO de enter.</li>
+</ol>
+<p><img alt="alt_text" src="images/image2.png" title="image_tooltip" /></p>
+<ol>
+<li>Agora aperte  o Ctrl C do teclado e então aparecerá &gt;&gt;&gt;</li>
+</ol>
+<p><img alt="alt_text" src="images/image3.png" title="image_tooltip" /></p>
+<ol>
+<li>No terminal digite: print(“Hello World”) e aperte o enter (você pode escrever qualquer coisa dentro das aspas, então aparecerá o que você escreveu.</li>
+</ol>
+<p><img alt="alt_text" src="images/image4.png" title="image_tooltip" /></p>
+<ol>
+<li>Agora vamos fazer uma operação matemática, digite um valor | escolha uma operação matemática e digite outro valor, aperte o enter e veja o resultado, conforme a imagem:</li>
+</ol>
+<p><img alt="alt_text" src="images/image5.png" title="image_tooltip" /></p>
+<ol>
 <li>
-<p>Instale um terminal, por exemplo, para instalar o picocom, digite os comandos abaixo:</p>
-<p>```
-sudo apt-get update
-sudo apt-get install picocom</p>
+<p>Agora digite o seguinte código no terminal:</p>
+<p><code>import board
+dir(board)</code></p>
+<p>Então aparecerá o conjunto de pinos disponíveis na Franzininho Wifi.</p>
 </li>
 </ol>
-<pre><code>
-
-4. Para acessar o terminal serial, digite o seguinte comando: picomcom /dev/ttyACMO de enter.
-
-
-
-
-
-![alt_text](images/image2.png &quot;image_tooltip&quot;)
-
-
-5. Agora aperte  o Ctrl C do teclado e então aparecerá &gt;&gt;&gt;
-
-
-
-
-
-![alt_text](images/image3.png &quot;image_tooltip&quot;)
-
-
-6. No terminal digite: print(“Hello World”) e aperte o enter (você pode escrever qualquer coisa dentro das aspas, então aparecerá o que você escreveu.
-
-
-
-
-
-![alt_text](images/image4.png &quot;image_tooltip&quot;)
-
-
-
-
-7. Agora vamos fazer uma operação matemática, digite um valor | escolha uma operação matemática e digite outro valor, aperte o enter e veja o resultado, conforme a imagem:
-
-
-
-
-
-![alt_text](images/image5.png &quot;image_tooltip&quot;)
-
-
-8. Agora digite o seguinte código no terminal: 
-
-    ```
-import board
-dir(board)
-</code></pre>
-<pre><code>Então aparecerá o conjunto de pinos disponíveis na Franzininho Wifi.
-</code></pre>
 <p><img alt="alt_text" src="images/image6.png" title="image_tooltip" /></p>
 <p>Agora que você já sabe quais são os nomes dos pinos da placa e também interagir com REPL. Podemos fechar o terminal e dar início abrindo o arquivo <strong>code.py</strong> que está na pasta.</p>
 <p><img alt="alt_text" src="images/image7.png" title="image_tooltip" /></p>
@@ -220,5 +194,5 @@ dir(board)
 
 <!--
 MkDocs version : 1.1.2
-Build Date UTC : 2021-04-08 03:17:28.853747+00:00
+Build Date UTC : 2021-04-08 03:23:53.607449+00:00
 -->
