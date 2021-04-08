@@ -25,7 +25,7 @@ sudo apt-get update
 sudo apt-get install picocom
 ```
 
-4 - Para acessar o terminal serial, digite o seguinte comando: picomcom /dev/ttyACMO de enter.v
+4 - Para acessar o terminal serial, digite o seguinte comando: picomcom /dev/ttyACM0 de enter.
 
 
 ![alt_text](images/primeiros_passos_2.png "image_tooltip")
