@@ -52,15 +52,7 @@
                 <ul class="current">
                     <li class="toctree-l1 current"><a class="reference internal current" href=".">Primeiros passos</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#introducao">Introdução</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#instalacao-do-esp-idf">Instalação do ESP-IDF</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#extensao-esp-idf-para-vscode">Extensão ESP-IDF para VSCode</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#hello-world">Hello, World!</a>
+    <li class="toctree-l2"><a class="reference internal" href="#terminal">Terminal</a>
     </li>
     </ul>
                     </li>
@@ -108,16 +100,73 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="primeiros-passos">Primeiros Passos</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra tincidunt laoreet. Ut consectetur tellus eu lobortis finibus. Nulla pulvinar neque sed posuere pellentesque. Sed at mattis ligula. Suspendisse scelerisque odio eu dolor tristique, eget tempor lorem accumsan. Nulla a ipsum nec felis varius accumsan in nec mi. Integer eget magna eget sem accumsan dignissim dapibus in odio. Aliquam fermentum, eros at ultrices iaculis, enim nunc bibendum tortor, ut dictum diam orci eu erat. Suspendisse scelerisque magna tempus elementum laoreet. Nunc eget convallis odio. Suspendisse potenti.</p>
-<h2 id="introducao">Introdução</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra tincidunt laoreet. Ut consectetur tellus eu lobortis finibus. Nulla pulvinar neque sed posuere pellentesque. Sed at mattis ligula. Suspendisse scelerisque odio eu dolor tristique, eget tempor lorem accumsan. Nulla a ipsum nec felis varius accumsan in nec mi. Integer eget magna eget sem accumsan dignissim dapibus in odio. Aliquam fermentum, eros at ultrices iaculis, enim nunc bibendum tortor, ut dictum diam orci eu erat. Suspendisse scelerisque magna tempus elementum laoreet. Nunc eget convallis odio. Suspendisse potenti.</p>
-<h2 id="instalacao-do-esp-idf">Instalação do ESP-IDF</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra tincidunt laoreet. Ut consectetur tellus eu lobortis finibus. Nulla pulvinar neque sed posuere pellentesque. Sed at mattis ligula. Suspendisse scelerisque odio eu dolor tristique, eget tempor lorem accumsan. Nulla a ipsum nec felis varius accumsan in nec mi. Integer eget magna eget sem accumsan dignissim dapibus in odio. Aliquam fermentum, eros at ultrices iaculis, enim nunc bibendum tortor, ut dictum diam orci eu erat. Suspendisse scelerisque magna tempus elementum laoreet. Nunc eget convallis odio. Suspendisse potenti.</p>
-<h3 id="extensao-esp-idf-para-vscode">Extensão ESP-IDF para VSCode</h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra tincidunt laoreet. Ut consectetur tellus eu lobortis finibus. Nulla pulvinar neque sed posuere pellentesque. Sed at mattis ligula. Suspendisse scelerisque odio eu dolor tristique, eget tempor lorem accumsan. Nulla a ipsum nec felis varius accumsan in nec mi. Integer eget magna eget sem accumsan dignissim dapibus in odio. Aliquam fermentum, eros at ultrices iaculis, enim nunc bibendum tortor, ut dictum diam orci eu erat. Suspendisse scelerisque magna tempus elementum laoreet. Nunc eget convallis odio. Suspendisse potenti.</p>
-<h2 id="hello-world">Hello, World!</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra tincidunt laoreet. Ut consectetur tellus eu lobortis finibus. Nulla pulvinar neque sed posuere pellentesque. Sed at mattis ligula. Suspendisse scelerisque odio eu dolor tristique, eget tempor lorem accumsan. Nulla a ipsum nec felis varius accumsan in nec mi. Integer eget magna eget sem accumsan dignissim dapibus in odio. Aliquam fermentum, eros at ultrices iaculis, enim nunc bibendum tortor, ut dictum diam orci eu erat. Suspendisse scelerisque magna tempus elementum laoreet. Nunc eget convallis odio. Suspendisse potenti.</p>
+                <h1 id="primeiros-passos-com-circuitpython-no-franzininho-wifi">Primeiros passos com CircuitPython no Franzininho Wifi</h1>
+<p>Para iniciar no CircuitPython é importante você entender como interagir com REPL. Nesses primeiros passos vamos aprender a como usar o REPL através do terminal serial.</p>
+<h2 id="terminal">Terminal</h2>
+<p>O primeiro passo é conectar a placa Franzininho Wifi em seu computador e logo irá aparecer algo parecido com um dispositivo de pen drive, conforme a imagem abaixo:</p>
+<p><img alt="alt_text" src="images/image1.png" title="image_tooltip" /></p>
+<p>Antes de sair abrindo os arquivos, faça o seguinte passo:</p>
+<ol>
+<li>Conecte a Franzininho</li>
+<li>Abra o terminal</li>
+<li>
+<p>Instale um terminal, por exemplo, para instalar o picocom, digite os comandos abaixo:</p>
+<p>```
+sudo apt-get update
+sudo apt-get install picocom</p>
+</li>
+</ol>
+<pre><code>
+
+4. Para acessar o terminal serial, digite o seguinte comando: picomcom /dev/ttyACMO de enter.
+
+
+
+
+
+![alt_text](images/image2.png &quot;image_tooltip&quot;)
+
+
+5. Agora aperte  o Ctrl C do teclado e então aparecerá &gt;&gt;&gt;
+
+
+
+
+
+![alt_text](images/image3.png &quot;image_tooltip&quot;)
+
+
+6. No terminal digite: print(“Hello World”) e aperte o enter (você pode escrever qualquer coisa dentro das aspas, então aparecerá o que você escreveu.
+
+
+
+
+
+![alt_text](images/image4.png &quot;image_tooltip&quot;)
+
+
+
+
+7. Agora vamos fazer uma operação matemática, digite um valor | escolha uma operação matemática e digite outro valor, aperte o enter e veja o resultado, conforme a imagem:
+
+
+
+
+
+![alt_text](images/image5.png &quot;image_tooltip&quot;)
+
+
+8. Agora digite o seguinte código no terminal: 
+
+    ```
+import board
+dir(board)
+</code></pre>
+<pre><code>Então aparecerá o conjunto de pinos disponíveis na Franzininho Wifi.
+</code></pre>
+<p><img alt="alt_text" src="images/image6.png" title="image_tooltip" /></p>
+<p>Agora que você já sabe quais são os nomes dos pinos da placa e também interagir com REPL. Podemos fechar o terminal e dar início abrindo o arquivo <strong>code.py</strong> que está na pasta.</p>
+<p><img alt="alt_text" src="images/image7.png" title="image_tooltip" /></p>
               
             </div>
           </div>
@@ -171,5 +220,5 @@
 
 <!--
 MkDocs version : 1.1.2
-Build Date UTC : 2021-04-08 02:37:45.192180+00:00
+Build Date UTC : 2021-04-08 03:17:28.853747+00:00
 -->
