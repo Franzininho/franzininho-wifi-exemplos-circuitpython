@@ -57,11 +57,12 @@
     </ul>
                     </li>
                 </ul>
-                <p class="caption"><span class="caption-text">Exemplos</span></p>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="exemplos/entrada_digital/">Entrada digital</a>
+                    <li class="toctree-l1"><a class="reference internal" href="exemplos/01-hello/">Hello, World! (Pisca LED)</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="exemplos/saida_digital/">Saída Digital</a>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="exemplos/02-intensidade-led/">Controlando a intensidade do brilho de LED</a>
                     </li>
                 </ul>
                 <ul>
@@ -104,43 +105,30 @@
 <p>Para iniciar no CircuitPython é importante você entender como interagir com REPL. Nesses primeiros passos vamos aprender a como usar o REPL através do terminal serial.</p>
 <h2 id="terminal">Terminal</h2>
 <p>O primeiro passo é conectar a placa Franzininho Wifi em seu computador e logo irá aparecer algo parecido com um dispositivo de pen drive, conforme a imagem abaixo:</p>
-<p><img alt="alt_text" src="images/image1.png" title="image_tooltip" /></p>
+<p><img alt="alt_text" src="img/00/primeiros_passos_1.png" title="image_tooltip" /></p>
 <p>Antes de sair abrindo os arquivos, faça o seguinte passo:</p>
-<ol>
-<li>Conecte a Franzininho</li>
-<li>Abra o terminal</li>
-<li>Instale um terminal, por exemplo, para instalar o picocom, digite os comandos abaixo:</li>
-</ol>
+<p>1 - Conecte a Franzininho</p>
+<p>2 - Abra o terminal</p>
+<p>3 - Instale um terminal, por exemplo, para instalar o picocom, digite os comandos abaixo:</p>
 <pre><code>sudo apt-get update
 sudo apt-get install picocom
 </code></pre>
-<ol>
-<li>Para acessar o terminal serial, digite o seguinte comando: picomcom /dev/ttyACMO de enter.</li>
-</ol>
-<p><img alt="alt_text" src="images/image2.png" title="image_tooltip" /></p>
-<ol>
-<li>Agora aperte  o Ctrl C do teclado e então aparecerá &gt;&gt;&gt;</li>
-</ol>
-<p><img alt="alt_text" src="images/image3.png" title="image_tooltip" /></p>
-<ol>
-<li>No terminal digite: print(“Hello World”) e aperte o enter (você pode escrever qualquer coisa dentro das aspas, então aparecerá o que você escreveu.</li>
-</ol>
-<p><img alt="alt_text" src="images/image4.png" title="image_tooltip" /></p>
-<ol>
-<li>Agora vamos fazer uma operação matemática, digite um valor | escolha uma operação matemática e digite outro valor, aperte o enter e veja o resultado, conforme a imagem:</li>
-</ol>
-<p><img alt="alt_text" src="images/image5.png" title="image_tooltip" /></p>
-<ol>
-<li>
-<p>Agora digite o seguinte código no terminal:</p>
-<p><code>import board
-dir(board)</code></p>
+<p>4 - Para acessar o terminal serial, digite o seguinte comando: picomcom /dev/ttyACM0 de enter.</p>
+<p><img alt="alt_text" src="img/00/primeiros_passos_2.png" title="image_tooltip" /></p>
+<p>5 - Agora aperte  o Ctrl C do teclado e então aparecerá &gt;&gt;&gt;</p>
+<p><img alt="alt_text" src="img/00/primeiros_passos_3.png" title="image_tooltip" /></p>
+<p>6 -  No terminal digite: print(“Hello World”) e aperte o enter (você pode escrever qualquer coisa dentro das aspas, então aparecerá o que você escreveu.</p>
+<p><img alt="alt_text" src="img/00/primeiros_passos_4.png" title="image_tooltip" /></p>
+<p>7 - Agora vamos fazer uma operação matemática, digite um valor | escolha uma operação matemática e digite outro valor, aperte o enter e veja o resultado, conforme a imagem:</p>
+<p><img alt="alt_text" src="img/00/primeiros_passos_5.png" title="image_tooltip" /></p>
+<p>8 - Agora digite o seguinte código no terminal:</p>
+<pre><code class="language-python">import board
+dir(board)
+</code></pre>
 <p>Então aparecerá o conjunto de pinos disponíveis na Franzininho Wifi.</p>
-</li>
-</ol>
-<p><img alt="alt_text" src="images/image6.png" title="image_tooltip" /></p>
+<p><img alt="alt_text" src="img/00/primeiros_passos_6.png" title="image_tooltip" /></p>
 <p>Agora que você já sabe quais são os nomes dos pinos da placa e também interagir com REPL. Podemos fechar o terminal e dar início abrindo o arquivo <strong>code.py</strong> que está na pasta.</p>
-<p><img alt="alt_text" src="images/image7.png" title="image_tooltip" /></p>
+<p><img alt="alt_text" src="img/00/primeiros_passos_7.png" title="image_tooltip" /></p>
               
             </div>
           </div>
@@ -148,7 +136,7 @@ dir(board)</code></p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="exemplos/entrada_digital/" class="btn btn-neutral float-right" title="Entrada digital">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="exemplos/01-hello/" class="btn btn-neutral float-right" title="Hello, World! (Pisca LED)">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
     </div>
@@ -176,7 +164,7 @@ dir(board)</code></p>
       
       
       
-        <span style="margin-left: 15px"><a href="exemplos/entrada_digital/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="exemplos/01-hello/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
@@ -194,5 +182,5 @@ dir(board)</code></p>
 
 <!--
 MkDocs version : 1.1.2
-Build Date UTC : 2021-04-08 03:23:53.607449+00:00
+Build Date UTC : 2021-04-27 21:56:17.957411+00:00
 -->

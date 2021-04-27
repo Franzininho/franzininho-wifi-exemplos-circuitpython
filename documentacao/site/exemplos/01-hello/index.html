@@ -10,7 +10,7 @@
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
   
-  <title>Saída Digital - Franzininho WiFi - CircuitPython</title>
+  <title>Hello, World! (Pisca LED) - Franzininho WiFi - CircuitPython</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../../css/theme.css" />
@@ -19,8 +19,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Sa\u00edda Digital";
-    var mkdocs_page_input_path = "exemplos/saida_digital.md";
+    var mkdocs_page_name = "Hello, World! (Pisca LED)";
+    var mkdocs_page_input_path = "exemplos/01-hello.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -53,13 +53,24 @@
                     <li class="toctree-l1"><a class="reference internal" href="../..">Primeiros passos</a>
                     </li>
                 </ul>
-                <p class="caption"><span class="caption-text">Exemplos</span></p>
                 <ul class="current">
-                    <li class="toctree-l1"><a class="reference internal" href="../entrada_digital/">Entrada digital</a>
-                    </li>
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Saída Digital</a>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Hello, World! (Pisca LED)</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#proposta-da-atividade">Proposta da atividade</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#materiais">Materiais</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#codigo">Código</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#video">Video</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#desafio">Desafio</a>
+    </li>
     </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../02-intensidade-led/">Controlando a intensidade do brilho de LED</a>
                     </li>
                 </ul>
                 <ul>
@@ -86,12 +97,8 @@
     <li><a href="../..">Docs</a> &raquo;</li>
     
       
-        
-          <li>Exemplos &raquo;</li>
-        
-      
     
-    <li>Saída Digital</li>
+    <li>Hello, World! (Pisca LED)</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -102,7 +109,41 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="saida-digital">Saída digital</h1>
+                <h1 id="hello-worldpisca-led">Hello World(Pisca LED)</h1>
+<h2 id="proposta-da-atividade">Proposta da atividade</h2>
+<p>O primeiro contato com a Franzininho WIFI será você fazer o blink (que faz com que o LED pisque em intervalos de tempo). Assim teremos o primeiro contato em fazer seu primeiro <strong>Hello, World</strong>! em um Hardware.</p>
+<h2 id="materiais">Materiais</h2>
+<ul>
+<li>1 Placa Franzininho WIFI;</li>
+<li>1 Protoboard;</li>
+<li>1 LED 3mm;</li>
+<li>1 Resistor 330 Ohm;</li>
+<li>Jumpers</li>
+</ul>
+<p><img alt="circuito" src="/documentacao/docs/img/0x01/circuito.png" /></p>
+<h2 id="codigo">Código</h2>
+<pre><code class="language-python">&quot;&quot;&quot;Lição 1: Lição 1 - Hello World(Pisca LED)&quot;&quot;&quot;  
+import board  
+import time  
+from digitalio import DigitalInOut, Direction  
+
+# Configurando o pino do LED
+
+# o led que configurei foi o pino 4 = IO4  
+led = DigitalInOut(board.IO4)  
+led.direction = Direction.OUTPUT  
+
+#loop infinito - executando sempre  
+while  True:  
+  led.value = True  
+  time.sleep(0.5)  
+  led.value = False  
+  time.sleep(0.5)
+</code></pre>
+<h2 id="video">Video</h2>
+<h2 id="desafio">Desafio</h2>
+<p>Agora que você aprendeu a fazer o <strong>Hello, World</strong> com a Franzininho WIFI, desafiamos você a piscar outro LED simultaneamente.</p>
+<p>Utilize a <code>#franzininhowifi</code>  para que nós possamos publicar em nossas redes sociais o seu desafio.</p>
               
             </div>
           </div>
@@ -110,10 +151,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../../about/" class="btn btn-neutral float-right" title="Sobre">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../02-intensidade-led/" class="btn btn-neutral float-right" title="Controlando a intensidade do brilho de LED">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../entrada_digital/" class="btn btn-neutral" title="Entrada digital"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../.." class="btn btn-neutral" title="Primeiros passos"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -139,10 +180,10 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../entrada_digital/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../.." style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../../about/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../02-intensidade-led/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
