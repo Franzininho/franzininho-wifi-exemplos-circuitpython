@@ -1,7 +1,7 @@
 site_name: Franzininho WiFi - CircuitPython
 site_favicon: img/favicon.ico
 
-repo_url:https://github.com/Franzininho/exemplos-circuitpython/tree/main/documentacao
+repo_url: https://github.com/Franzininho/exemplos-circuitpython/tree/main/documentacao
 
 nav:
     - Primeiros passos: index.md
