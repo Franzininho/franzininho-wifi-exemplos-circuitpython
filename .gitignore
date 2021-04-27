@@ -1,8 +1,7 @@
+documentacao/site/
 *.o
 *.hex
 *.elf
 *.lss
 *.list
 .vscode
-/documentacao/site
-
