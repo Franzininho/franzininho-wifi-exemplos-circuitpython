@@ -3,8 +3,8 @@ site_favicon: img/favicon.ico
 
 nav:
     - Primeiros passos: index.md
-    - Hello, World! (Pisca LED): exemplos/01-hello.md
-    - Controlando a intensidade do brilho de LED: exemplos/02-intensidade-led.md
+    - Hello, World! (Pisca LED): 01-hello.md
+    - Controlando a intensidade do brilho de LED: 02-intensidade-led.md
     - Sobre: about.md
 
 
