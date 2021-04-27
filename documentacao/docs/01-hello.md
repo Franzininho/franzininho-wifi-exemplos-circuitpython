@@ -12,7 +12,7 @@
 -   1 Resistor 330 Ohm;
 -   Jumpers
 
-![circuito](img/circuito.png)
+![circuito](img/01/circuito.png)
 
 ## Código
 
