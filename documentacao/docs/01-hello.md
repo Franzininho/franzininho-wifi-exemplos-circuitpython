@@ -50,4 +50,4 @@ Agora que você aprendeu a fazer o **Hello, World** com a Franzininho WIFI, desa
 
 
 !!! note " Dica "
-    Utilize a `#franzininhowifi`  para que nós possamos publicar em nossas redes sociais o seu desafio
+    Utilize a ```#franzininho```  para que nós possamos publicar em nossas redes sociais o seu desafio

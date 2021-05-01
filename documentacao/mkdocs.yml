@@ -17,4 +17,4 @@ theme:
         - python
 
 markdown_extensions:
-    - admonition
+  - admonition
