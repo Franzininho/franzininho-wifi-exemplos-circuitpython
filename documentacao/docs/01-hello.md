@@ -4,7 +4,7 @@
 
 ## Proposta da atividade
 
- O primeiro contato com a Franzininho WIFI será você fazer o blink (que faz com que o LED pisque em intervalos de tempo). Assim teremos o primeiro contato em fazer seu primeiro **Hello, World**! em um Hardware.
+ O primeiro contato com a Franzininho WIFI será para você fazer um blink (que faz com que o LED pisque em intervalos de tempo). Assim, você irá fazer seu primeiro **Hello, World**! em um hardware.
 
 ## Materiais
 
@@ -40,9 +40,10 @@ while  True:
 
 ## Video
 
-Confira um breve vídeo aplicando o pisca LED em em miniatura com relação ao nosso cotidiano.
+Confira um breve vídeo aplicando o pisca LED em miniatura com relação ao nosso cotidiano.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tgY2_n1aOC4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 ## Desafio
 
