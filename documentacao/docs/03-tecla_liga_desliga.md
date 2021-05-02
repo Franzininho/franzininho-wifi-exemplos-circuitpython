@@ -1,1 +1,0 @@
-# Tecla liga e desliga

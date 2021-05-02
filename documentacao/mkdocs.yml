@@ -7,7 +7,7 @@ nav:
     - Primeiros passos: index.md
     - Hello, World! (Pisca LED): 01-hello.md
     - Controlando a intensidade do brilho de LED: 02-intensidade-led.md
-    - Tecla liga e desliga: 03-tecla_liga_desliga.md
+    - Tecla liga e desliga: 03-botao_liga_desliga.md
     - Sobre: about.md
 
 
