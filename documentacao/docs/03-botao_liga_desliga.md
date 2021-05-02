@@ -18,12 +18,14 @@ Nesta atividade temos o seguinte exemplo,  como fazer para  um  botão ao ser pr
 
 ## Circuito
 
-![circuito_botão.png](circuito_botão.png)
-
+![circuito_botão.png](img/02/circuito_botão.png)
 
 
 ## Código
 
+## Vídeo
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hjIP685puJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Desafio
 
