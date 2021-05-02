@@ -1,6 +1,10 @@
 # Primeiros passos com CircuitPython no Franzininho Wifi
 
-Para iniciar no CircuitPython é importante você entender como interagir com REPL. Nesses primeiros passos vamos aprender a como usar o REPL através do terminal serial.
+Este documento tem como objetivo ajudá-lo a configurar o Franzininho WIFI para o uso no CircuitPython em seu computador.
+
+## Introdução
+
+Para iniciar o CircuitPython é importante você entender como interagir com REPL, antes de usar um editor. O primeiro passo é utilizar via terminal serial e depois a como utiliza-lo no editor MU. No próximo tópico vamos aprender a como usar o REPL através do terminal serial.
 
 ## Terminal
 
