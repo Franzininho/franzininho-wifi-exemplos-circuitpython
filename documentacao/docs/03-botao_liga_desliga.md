@@ -1,1 +1,1 @@
-# Tecla liga e desliga
+# Botão liga e desliga
