@@ -1,4 +1,4 @@
- name: mkdocs
+name: mkdocs
 
 on:
   push:
