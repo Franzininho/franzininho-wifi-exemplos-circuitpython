@@ -55,6 +55,7 @@ while True:
 
 ## Desafio
 
+O desafio agora é trabalhar com dois botões para acender dois leds.
 
 
 !!! note " Dica "
