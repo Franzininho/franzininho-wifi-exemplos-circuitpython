@@ -28,4 +28,6 @@ jobs:
           pip install mkdocs-material
 
       - name: Deploy 🚀
-        run: python3 -m mkdocs gh-deploy --force
+        run: |
+          cd documentacao
+          python3 -m mkdocs gh-deploy --force
