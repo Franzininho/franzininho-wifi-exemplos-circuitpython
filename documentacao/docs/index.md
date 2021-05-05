@@ -1,6 +1,6 @@
-# Primeiros passos com CircuitPython no Franzininho Wifi
+# Primeiros passos
 
-Este documento tem como objetivo ajudá-lo a configurar o Franzininho WIFI para o uso no CircuitPython em seu computador.
+Este documento tem como objetivo ajudá-lo a configurar o Franzininho WIFI para o uso no CircuitPython em seu computador.  Provavelmente ao inserir sua placa apareceu como uma unidade de disco. Confira a seguir mais instruções para o isso!
 
 ## Introdução
 
