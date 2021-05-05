@@ -58,8 +58,15 @@ Para a instalação no windows você deve seguir o passo a passo deste tutorial.
 
 ![imagem11](img/00/imagem11.png)
 
+### Linux
 
-## Terminal
+Para a instalação no Linux você deve seguir o passo a passo deste tutorial
+
+No linux o primeiro passo é interagir com REPL, antes de usar um editor. O primeiro passo é utilizar via terminal serial e depois a como utilizá-lo no editor MU. No próximo tópico vamos aprender a como usar o REPL através do terminal serial.
+
+
+
+#### Terminal
 
 O primeiro passo é conectar a placa Franzininho Wifi em seu computador e logo irá aparecer algo parecido com um dispositivo de pen drive, conforme a imagem abaixo:
 
@@ -119,3 +126,30 @@ Agora que você já sabe quais são os nomes dos pinos da placa e também intera
 
 
 ![alt_text](img/00/primeiros_passos_7.png "image_tooltip")
+
+#### Editor Mu
+
+Para a instalação no Linux você deve seguir o passo a passo deste tutorial
+
+1. Acesse o site, acesse este link: https://codewith.mu/
+
+![imagem1](img/00/imagem1.png)   
+
+2. Clique na opção Python Package (Linux or Native Python)
+
+![imagem2](img/00/imagem2_linux.png)
+
+3. Abra seu terminal e digite o comando abaixo, ele vai instalar bibliotecas do python, aguarde até finalizar:
+
+```
+pip3 install mu-editor==1.1.0b4
+```   
+
+4. Agora digite este comando:
+
+```
+mu-editor
+
+```
+
+Pronto!
