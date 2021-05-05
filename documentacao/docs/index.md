@@ -6,6 +6,38 @@ Este documento tem como objetivo ajudá-lo a configurar o Franzininho WIFI para 
 
 Antes de começar a diversão de programar a Franzininho WIFI e o CircuitPython, precisamos realizar alguns passos de configuração para determinado sistema. Veja abaixo o sistema e faça o passo a passo!
 
+## Instalação
+
+Nesta etapa vamos preparar o ambiente para você usar sua placa Franzininho WIFI, escolha seu sistema operacional e siga o passo a passo de como fazer esta configuração.
+
+#### Windows
+
+Para a instalação no windows você deve seguir o passo a passo deste tutorial.
+
+1. Acesse o site, acesse este link: https://codewith.mu/ e clique em Download:
+
+2. Após isso clique na opção **Windows Installer**.
+
+3. Salve em seu computador.
+
+4. Aguarde até fazer o download e após isso clique em abrir o arquivo que você acabou de baixar.
+
+5. Ao abrir o programa, irá aparecer uma tela onde você terá que aceitar os termos de uso do software, clique na caixa de seleção.
+
+6. Então o botão de **install** será ativado, clique nele.
+
+7. Aguarde a instalação.
+
+8. Procure em seu computador **Mu Editor**
+
+9. Então ao abrir uma janela, escolha **Circuit Python**, conforme a imagem abaixo:
+
+10. Pronto, agora é só se divertir!
+
+
+
+
+
 ## Terminal
 
 O primeiro passo é conectar a placa Franzininho Wifi em seu computador e logo irá aparecer algo parecido com um dispositivo de pen drive, conforme a imagem abaixo:
