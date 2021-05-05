@@ -4,7 +4,7 @@ Este documento tem como objetivo ajudá-lo a configurar o Franzininho WIFI para 
 
 ## Introdução
 
-Para iniciar o CircuitPython é importante você entender como interagir com REPL, antes de usar um editor. O primeiro passo é utilizar via terminal serial e depois a como utiliza-lo no editor MU. No próximo tópico vamos aprender a como usar o REPL através do terminal serial.
+Antes de começar a diversão de programar a Franzininho WIFI e o CircuitPython, precisamos realizar alguns passos de configuração para determinado sistema. Veja abaixo o sistema e faça o passo a passo!
 
 ## Terminal
 
