@@ -16,26 +16,47 @@ Para a instalação no windows você deve seguir o passo a passo deste tutorial.
 
 1. Acesse o site, acesse este link: https://codewith.mu/ e clique em Download:
 
+![imagem1](img/00/imagem1.png)   
+
 2. Após isso clique na opção **Windows Installer**.
+
+![imagem2](img/00/imagem2.png)
 
 3. Salve em seu computador.
 
+![imagem3](img/00/imagem3.png)
+
 4. Aguarde até fazer o download e após isso clique em abrir o arquivo que você acabou de baixar.
+
+![imagem4](img/00/imagem4.png)
 
 5. Ao abrir o programa, irá aparecer uma tela onde você terá que aceitar os termos de uso do software, clique na caixa de seleção.
 
+![imagem5](img/00/imagem5.png)
+
 6. Então o botão de **install** será ativado, clique nele.
+
+![imagem6](img/00/imagem6.png)
 
 7. Aguarde a instalação.
 
+![imagem7](img/00/imagem7.png)
+
 8. Procure em seu computador **Mu Editor**
 
+![imagem8](img/00/imagem8.png)
+
 9. Então ao abrir uma janela, escolha **Circuit Python**, conforme a imagem abaixo:
+
+![imagem9](img/00/imagem9.png)
+
+![imagem10](img/00/imagem10.png)
+
 
 10. Pronto, agora é só se divertir!
 
 
-
+![imagem11](img/00/imagem11.png)
 
 
 ## Terminal
