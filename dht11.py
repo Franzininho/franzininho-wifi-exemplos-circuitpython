@@ -1,20 +1,21 @@
-import time
+""" Leitura de temperatura e umidade com DHT11 """
 
-import adafruit_dht
 import board
+import time
+import adafruit_dht
 
 dht = adafruit_dht.DHT11(board.IO2)
 
 while True:
     try:
-        temperature = dht.temperature
-        humidity = dht.humidity
-        # Print what we got to the REPL
-        print(temperature)
-        print(humidity)
+        temperatura = dht.temperature
+        umidade = dht.humidity
+        # Imprime valores lidos na serial
+        print(temperatura)
+        print(umidade)
     except RuntimeError as e:
-        # Reading doesn't always work! Just print error and we'll try again
-        print("Reading from DHT failure: ", e.args)
+        # A leitura do DHT11 pode falhar
+        print("Falha na leitura do DHT11: ", e.args)
 
     time.sleep(1)
 
