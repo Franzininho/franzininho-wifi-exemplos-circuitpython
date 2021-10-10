@@ -11,8 +11,7 @@ while True:
         temperatura = dht.temperature
         umidade = dht.humidity
         # Imprime valores lidos na serial
-        print(temperatura)
-        print(umidade)
+        print("Temperatura: {:.1f} °C \t Umidade: {}%".format(temperatura, umidade))
     except RuntimeError as e:
         # A leitura do DHT11 pode falhar
         print("Falha na leitura do DHT11: ", e.args)
