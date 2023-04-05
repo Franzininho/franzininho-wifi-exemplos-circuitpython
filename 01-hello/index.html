@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Hello, World! (Pisca LED) - Franzininho WiFi - CircuitPython</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Hello, World! (Pisca LED)";
+        var mkdocs_page_input_path = "01-hello.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/python.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Franzininho WiFi - CircuitPython
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Primeiros passos</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Hello, World! (Pisca LED)</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#proposta-da-atividade">Proposta da atividade</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#materiais">Materiais</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#codigo">Código</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#video">Video</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#desafio">Desafio</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../02-intensidade-led/">Controlando a intensidade do brilho de LED</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../03-botao_liga_desliga/">Botão liga e desliga</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../04-sensor%20de%20luz%20com%20LDR/">Sensor de luz com LDR</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../about/">Sobre</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Franzininho WiFi - CircuitPython</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+      <li>Hello, World! (Pisca LED)</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/Franzininho/exemplos-circuitpython/tree/main/documentacao/edit/master/docs/01-hello.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="hello-worldpisca-led">Hello World(Pisca LED)</h1>
+<p><img alt="imagem_hello_world.png" src="../img/01/imagem_hello_world.png" /></p>
+<h2 id="proposta-da-atividade">Proposta da atividade</h2>
+<p>O primeiro contato com a Franzininho WIFI será para você fazer um blink (que faz com que o LED pisque em intervalos de tempo). Assim, você irá fazer seu primeiro <strong>Hello, World</strong>! em um hardware.</p>
+<h2 id="materiais">Materiais</h2>
+<ul>
+<li>1 Placa Franzininho WIFI;</li>
+<li>1 Protoboard;</li>
+<li>1 LED 3mm;</li>
+<li>1 Resistor 330 Ohm;</li>
+<li>Jumpers</li>
+</ul>
+<p><img alt="circuito" src="../img/01/circuito.png" /></p>
+<h2 id="codigo">Código</h2>
+<pre><code class="language-python">&quot;&quot;&quot;Lição 1: Lição 1 - Hello World(Pisca LED)&quot;&quot;&quot;  
+import board  
+import time from digitalio import DigitalInOut, Direction  
+
+# Configurando o pino do LED
+
+# o led que configurei foi o pino 4 = IO4  
+led = DigitalInOut(board.IO4)  
+led.direction = Direction.OUTPUT  
+
+#loop infinito - executando sempre  
+while  True:  
+  led.value = True  
+  time.sleep(0.5)  
+  led.value = False  
+  time.sleep(0.5)
+</code></pre>
+<h2 id="video">Video</h2>
+<p>Confira um breve vídeo aplicando o pisca LED em miniatura com relação ao nosso cotidiano.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tgY2_n1aOC4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h2 id="desafio">Desafio</h2>
+<p>Agora que você aprendeu a fazer o <strong>Hello, World</strong> com a Franzininho WIFI, desafiamos você a piscar outro LED simultaneamente.</p>
+<div class="admonition note">
+<p class="admonition-title"> Dica </p>
+<p>Utilize a <code>#franzininho</code>  para que nós possamos publicar em nossas redes sociais o seu desafio</p>
+</div>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href=".." class="btn btn-neutral float-left" title="Primeiros passos"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../02-intensidade-led/" class="btn btn-neutral float-right" title="Controlando a intensidade do brilho de LED">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/Franzininho/exemplos-circuitpython/tree/main/documentacao" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../02-intensidade-led/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Sensor de luz com LDR - Franzininho WiFi - CircuitPython</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Sensor de luz com LDR";
+        var mkdocs_page_input_path = "04-sensor de luz com LDR.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/python.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Franzininho WiFi - CircuitPython
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Primeiros passos</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../01-hello/">Hello, World! (Pisca LED)</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../02-intensidade-led/">Controlando a intensidade do brilho de LED</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../03-botao_liga_desliga/">Botão liga e desliga</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Sensor de luz com LDR</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#proposta-da-atividade">Proposta da atividade</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#materiais">Materiais</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#circuito">Circuito</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#terminal">Terminal</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#codigo">Código</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#video">Vídeo</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#desafio">Desafio</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../about/">Sobre</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Franzininho WiFi - CircuitPython</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+      <li>Sensor de luz com LDR</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/Franzininho/exemplos-circuitpython/tree/main/documentacao/edit/master/docs/04-sensor de luz com LDR.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="sensor-de-luz-com-ldr">Sensor de luz com LDR</h1>
+<p><img alt="imagem_sensor_de-luz" src="../img/03/imagem_sensor_de_luz.jpg" /></p>
+<h2 id="proposta-da-atividade">Proposta da atividade</h2>
+<p>Nesta atividade iremos utilizar o LDR como funcionamento de uma fotocélula, onde ao escurecer será aceso o LED, como acontece na luz da rua.</p>
+<h2 id="materiais">Materiais</h2>
+<ul>
+<li>1 Placa Franzininho Wifi;</li>
+<li>1 Protoboard;</li>
+<li>1 Resistor 330;</li>
+<li>1 Resistor 10K;</li>
+<li>1 LDR(10K)</li>
+<li>Jumpers</li>
+</ul>
+<h2 id="circuito">Circuito</h2>
+<p><img alt="circuito_ldr" src="../img/03/circuito_ldr.png" /></p>
+<p>Antes de sair escrevendo código, vamos testar via  via linha de comando.</p>
+<h2 id="terminal">Terminal</h2>
+<p>Abra o terminal e digite picocom /dev/ ttyACMO e dê o enter se não funcionar digite ctrl C</p>
+<p>Digite o comando abaixo, um por vez.</p>
+<pre><code class="language-python">import time
+import board
+from analogio import AnalogIn
+</code></pre>
+<p>Agora configure o pino que você montou no seu circuito, no meu caso usei o pino 6, vamos criar a variável para ele.</p>
+<pre><code class="language-python">ldr = AnalogIn(board.IO6)
+</code></pre>
+<p>Agora vamos ver o valor:</p>
+<pre><code class="language-python">ldr.value
+</code></pre>
+<p>Veja o resultado, meu caso o valor está dando este valor 49866,  mas lembrando que depende muito da luz que você está recebendo no momento que estiver realizando este exemplo.</p>
+<p><img alt="imagem_01" src="../img/03/imagem_01.png" /></p>
+<p>Agora vamos criar um while para saber a variação</p>
+<p><img alt="imagem_02" src="../img/03/imagem_02.png" /></p>
+<p>Você percebe que o valor no meu caso está variando entre 4000 e 5000, quando eu escureço o sensor LDR ele varia para 2000, conforme a imagem abaixo:</p>
+<p><img alt="imagem_02" src="../img/03/imagem_03.png" /></p>
+<p>Pronto!</p>
+<p>Agora vamos testar inserindo um LED e programando ele via o editor MU.</p>
+<h2 id="codigo">Código</h2>
+<pre><code class="language-python">
+&quot;&quot;&quot;&quot;Lição 4 -Sensor de luz com LDR&quot;&quot;&quot;
+
+import time
+import board
+from analogio import AnalogIn
+from digitalio import DigitalInOut, Direction
+
+# Configurando o pino do LED, configurei foi o pino 4 = IO4
+led = DigitalInOut(board.IO4)
+led.direction = Direction.OUTPUT
+
+# Configurando o pino LDR configurei o pino 6 = IO6
+analog_in = AnalogIn(board.IO6)
+
+
+while True:
+
+    media = 0;
+    for x in range(50):
+        media += analog_in.value
+
+    media/=50
+    print(media)
+
+    if (analog_in.value &lt;15000) :
+        led.value = True
+    else:
+    led.value = False
+
+    time.sleep(0.2)
+</code></pre>
+<h2 id="video">Vídeo</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ITeomlxueLU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h2 id="desafio">Desafio</h2>
+<p>Agora o desafio é fazer isso ao contrário. Quando colocar a mão no sensor LDR ao invés do LED acender, o LED irá apagar.</p>
+<div class="admonition note">
+<p class="admonition-title"> Dica </p>
+<p>Utilize a <code>#franzininho</code>  para que nós possamos publicar em nossas redes sociais o seu desafio</p>
+</div>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../03-botao_liga_desliga/" class="btn btn-neutral float-left" title="Botão liga e desliga"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../about/" class="btn btn-neutral float-right" title="Sobre">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/Franzininho/exemplos-circuitpython/tree/main/documentacao" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../03-botao_liga_desliga/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../about/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

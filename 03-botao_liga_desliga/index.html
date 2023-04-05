@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Botão liga e desliga - Franzininho WiFi - CircuitPython</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Bot\u00e3o liga e desliga";
+        var mkdocs_page_input_path = "03-botao_liga_desliga.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/python.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Franzininho WiFi - CircuitPython
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Primeiros passos</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../01-hello/">Hello, World! (Pisca LED)</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../02-intensidade-led/">Controlando a intensidade do brilho de LED</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Botão liga e desliga</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#proposta-da-atividade">Proposta da atividade</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#materiais">Materiais</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#circuito">Circuito</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#codigo">Código</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#video">Vídeo</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#desafio">Desafio</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../04-sensor%20de%20luz%20com%20LDR/">Sensor de luz com LDR</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../about/">Sobre</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Franzininho WiFi - CircuitPython</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+      <li>Botão liga e desliga</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/Franzininho/exemplos-circuitpython/tree/main/documentacao/edit/master/docs/03-botao_liga_desliga.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="botao-liga-e-desliga">Botão liga e desliga</h1>
+<p><img alt="imagem_tecla_liga_desliga.jpg" src="../img/02/imagem_tecla_liga_desliga.jpg" /></p>
+<h2 id="proposta-da-atividade">Proposta da atividade</h2>
+<p>Nesta atividade temos o seguinte exemplo,  como fazer para  um  botão ao ser pressionado acenda um LED e ao pressionar novamente o botão, ele irá desligar o LED.</p>
+<h2 id="materiais">Materiais</h2>
+<ul>
+<li>1 Placa Franzininho Wifi;</li>
+<li>1 Protoboard;</li>
+<li>1 LED 3mm;</li>
+<li>1 Resistor 300 Ohm;</li>
+<li>1 Botão;</li>
+<li>Jumpers</li>
+</ul>
+<h2 id="circuito">Circuito</h2>
+<p><img alt="circuito_botão.png" src="../img/02/circuito_bot%C3%A3o.png" /></p>
+<h2 id="codigo">Código</h2>
+<pre><code class="language-python">&quot;&quot;&quot;Exemplo 3 - Botão Liga e desliga&quot;&quot;&quot;
+import time
+import board
+from digitalio import DigitalInOut, Direction, Pull
+
+# Configurei o botão no pino 5 da Franzininho Wifi
+btn = DigitalInOut(board.IO6)
+btn.direction = Direction.INPUT
+btn.pull = Pull.UP
+
+
+# o led que configurei foi o pino 4 = IO4
+led = DigitalInOut(board.IO4)
+led.direction = Direction.OUTPUT
+
+
+while True:
+    if btn.value ==0:
+        #print(&quot;BTN is down&quot;)
+        led.value=not led.value
+        while btn.value==0:
+            time.sleep(0.01)
+
+</code></pre>
+<h2 id="video">Vídeo</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hjIP685puJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h2 id="desafio">Desafio</h2>
+<p>O desafio agora é trabalhar com dois botões para acender dois leds.</p>
+<div class="admonition note">
+<p class="admonition-title"> Dica </p>
+<p>Utilize a <code>#franzininho</code>  para que nós possamos publicar em nossas redes sociais o seu desafio</p>
+</div>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../02-intensidade-led/" class="btn btn-neutral float-left" title="Controlando a intensidade do brilho de LED"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../04-sensor%20de%20luz%20com%20LDR/" class="btn btn-neutral float-right" title="Sensor de luz com LDR">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/Franzininho/exemplos-circuitpython/tree/main/documentacao" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../02-intensidade-led/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../04-sensor%20de%20luz%20com%20LDR/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
