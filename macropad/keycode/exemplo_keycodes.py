@@ -45,5 +45,13 @@ while True:
           
     if key4.value == False:
         kbd.send(Keycode.RIGHT_ARROW)
+        
+    if key5.value == False:
+        kbd.send(Keycode.SPACEBAR)
+        
+    if key6.value == False:
+        kbd.press(Keycode.DOWN_ARROW)
+    else:
+        kbd.release(Keycode.DOWN_ARROW)
 
     time.sleep(0.1)
